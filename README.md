@@ -1,2 +1,2 @@
-# transmedia
-Herramientas didácticas transmediales
+# RDCI
+Redes de Computadoras I

@@ -1,0 +1,75 @@
+¡Esto funciona!
+---------------
+
+Esta diapositiva tiene texto asociado que aparece al costado y explica
+lo que queremos describir en la imagen.
+
+-   Pulsando una tecla de control se puede conmutar entre el modo
+    presentación y el modo apunte.
+-   El material sirve para dar la clase y para que el estudiante repase
+
+Ancho de banda digital
+----------------------
+
+La velocidad de transmisión de una interfaz a veces es llamada ancho de
+banda digital.
+
+El retardo de transmisión depende de la velocidad de transmisión de la
+interfaz, mientras que el retardo de propagación es una función de la
+distancia que tiene que recorrer la señal por el medio.
+
+Dos enlaces de la misma longitud tendrán aproximadamente el mismo
+retardo de propagación, sin importar el ancho de banda digital de las
+interfaces.
+
+-   Cuando ambos enlaces transmitan a la vez, los bits emitidos al mismo
+    tiempo llegarán al otro extremo del enlace en el mismo tiempo.
+-   Sin embargo, cuando una de las interfaces tenga una velocidad de
+    transmisión mayor que la otra, el espacio ocupado en el enlace por
+    la señal que codifica cada bit será menor que la del otro enlace.
+
+Un sistema diferente
+--------------------
+
+Todos conocemos el método tradicional de contar con los dedos. Como
+tenemos cinco dedos en cada mano, podemos contar hasta diez. Pero
+también podemos utilizar un método diferente del tradicional, que
+resulta ser muy interesante.
+
+-   Con este método, al llegar a 5 con la mano derecha, representamos el
+    6 sólo con un dedo de la izquierda. Los dedos de la mano derecha
+    vuelven a 0, y seguimos contando con la derecha.
+-   Cada vez que se agotan los dedos de la mano derecha levantamos un
+    nuevo dedo de la izquierda, y la derecha vuelve a 0.
+-   Cada dedo en alto de la mano izquierda significa que se agotó la
+    secuencia de la mano derecha una vez.
+
+Preguntas
+
+-   ¿Hasta qué número se puede representar en este sistema, sólo con dos
+    manos?
+-   Si agregamos una tercera mano, de un amigo, ¿hasta qué número
+    llegamos?
+-   ¿Y cómo se representa el 36? ¿Y el 37?
+-   Y con cuatro manos, ¿hasta qué número llegamos?
+-   Y, si el número no se puede representar con dos manos, ¿cómo es el
+    procedimiento para saber qué dedos levantar?
+
+Este emulador de PC construido en Javascript nos permite practicar los
+comandos del shell dentro de una máquina virtual Linux y desde el
+navegador, sin necesidad de una instalación completa en nuestro equipo.
+
+-   Para retroceder en el terminal
+-   Teclas Ctrl-Up, Ctrl-Down, Ctrl-PageUp y Ctrl-PageDown.
+-   Para copiar datos a la máquina virtual
+-   Copiar el texto a la caja o clipboard a la derecha.
+-   En el shell de la máquina virtual escribir: cat < /dev/clipboard >
+    /tmp/archivo
+-   Ahora tenemos ese mismo texto en el archivo /tmp/archivo.
+-   Para extraer datos de la máquina virtual
+-   Invertir el procedimiento anterior: cat mi sub archivo > /dev/clipboard
+-   Seleccionar el texto en la caja clipboard y copiarlo a alguna otra
+    aplicación en nuestro equipo, tal como un editor.
+
+¡Muchas gracias!
+================
