@@ -25,6 +25,7 @@ Eduardo Grosclaude 2017
 	<li>Presentaciones en PDF</li>
 	<li>Estáticas</li>
 	<li>Eficaces pero aburridas</li>
+	<li>Posibilidades limitadas</li>
 	<li>No reemplazan al libro</li>
 	<ul>
 	<li class="fragment">¡No reemplazan al libro!</li>
@@ -32,7 +33,6 @@ Eduardo Grosclaude 2017
 		<li class="fragment">¡No-<span class="fragment">reemplazan-</span><span class="fragment">al-</span><span class="fragment">libro!</span></li>
 		</ul>
 	</ul>
-	<li class="fragment">Posibilidades limitadas</li>
 	</ul>
 </ul>
 <aside data-markdown class="notes">
@@ -68,12 +68,12 @@ Eduardo Grosclaude 2017
 <h2>Reveal.js</h2>
 <ul>
 	<li>Framework hecho en HTML5 + Javascript</li>
+	<li>Proyecto con vitalidad</li>
+	<li><a href="http://github.com/hakimel/reveal.js" target="_blank"> https://github.com/hakimel/reveal.js</a></li>
 	<li>Muchos plugins</li>
 	<ul>
 		<li>Pizarra, menú, audio, matemática</li>
 	</ul>
-	<li>Proyecto con vitalidad</li>
-	<li><a href="http://github.com/hakimel/reveal.js" target="_blank"> https://github.com/hakimel/reveal.js</a></li>
 </ul>
 <img src="img/colab/blog-github.png" class="plain stretch"> 
 <aside data-markdown class="notes">
@@ -202,12 +202,6 @@ Esta diapositiva tiene texto asociado que aparece al costado y explica lo que qu
 
 
 
-<section>
-<h2>¿Cuál fue el aporte?</h2>
-<div class="fragment" width="100%" height="100%">
-<img src="img/shit.jpg"></img>
-</div>
-</section>
 <!------------------------>
 <!------------------------
 <section data-transition="slide-in slide-out">
@@ -216,7 +210,7 @@ Esta diapositiva tiene texto asociado que aparece al costado y explica lo que qu
 <aside data-markdown class="notes">
 </aside>
 </section>
-
+------------------->
 <section data-transition="slide-in slide-out" data-coursemod-shown="true">
 <h2>Modelos de workflow</h2>
 <h3>Centralizado</h3>
@@ -264,8 +258,35 @@ Esta diapositiva tiene texto asociado que aparece al costado y explica lo que qu
 <h2>Modelo del dictador</h2>
 <img src="img/colab/torvalds.png" class="plain stretch"> 
 </section>
------------------------->
 
+<section data-coursemod-shown="true">
+<h2>Usando Linux</h2>
+<a href="http://bellard.org/jslinux/index.html">Un emulador de PC en Javascript, corriendo Linux</a>
+<aside data-markdown class="notes">
+Este emulador de PC construido en Javascript nos permite practicar los comandos del shell dentro de una *máquina virtual* Linux y desde el navegador, sin necesidad de 
+una instalación completa en nuestro equipo.
+
+* Para retroceder en el terminal
+  - Teclas Ctrl-Up, Ctrl-Down, Ctrl-PageUp y Ctrl-PageDown.
+* Para copiar datos a la máquina virtual
+  - Copiar el texto a la caja o **clipboard** a la derecha.
+  - En el shell de la máquina virtual escribir:
+        cat < /dev/clipboard > /tmp/archivo
+  - Ahora tenemos ese mismo texto en el archivo /tmp/archivo.
+* Para extraer datos de la máquina virtual
+  - Invertir el procedimiento anterior: 
+        cat mi_archivo > /dev/clipboard
+  - Seleccionar el texto en la caja **clipboard** y copiarlo a alguna otra aplicación en nuestro equipo, tal como un editor.
+</aside>
+</section>
+
+
+<section>
+<h2>¿Cuál fue el aporte?</h2>
+<div class="fragment" width="100%" height="100%">
+<img src="img/shit.jpg"></img>
+</div>
+</section>
 
 <!------------------------>
 <section data-transition="slide-in fade-out">
@@ -812,27 +833,10 @@ con la derecha.
 </div>
 </section>
 
-
-<section data-coursemod-shown="true">
-<h2>Usando Linux</h2>
-<a href="http://bellard.org/jslinux/index.html">Un emulador de PC en Javascript, corriendo Linux</a>
-<aside data-markdown class="notes">
-Este emulador de PC construido en Javascript nos permite practicar los comandos del shell dentro de una *máquina virtual* Linux y desde el navegador, sin necesidad de 
-una instalación completa en nuestro equipo.
-
-* Para retroceder en el terminal
-  - Teclas Ctrl-Up, Ctrl-Down, Ctrl-PageUp y Ctrl-PageDown.
-* Para copiar datos a la máquina virtual
-  - Copiar el texto a la caja o **clipboard** a la derecha.
-  - En el shell de la máquina virtual escribir:
-        cat < /dev/clipboard > /tmp/archivo
-  - Ahora tenemos ese mismo texto en el archivo /tmp/archivo.
-* Para extraer datos de la máquina virtual
-  - Invertir el procedimiento anterior: 
-        cat mi_archivo > /dev/clipboard
-  - Seleccionar el texto en la caja **clipboard** y copiarlo a alguna otra aplicación en nuestro equipo, tal como un editor.
-</aside>
+<section class="preguntas" data-background="#3c53b5" data-background-transition="zoom" data-coursemod-shown="false">
+<h1>Conclusiones</h1>
 </section>
+
 
 
 

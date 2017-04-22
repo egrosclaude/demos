@@ -209,7 +209,7 @@ var Tableau = function(height) {
 			addChallenge();
 			if(CONFIG.timer) clearInterval(CONFIG.timer);
 			console.log('pre update ',CONFIG.getLimSup());
-			if(CONFIG.removes === 2 * CONFIG.getLimSup()) { 
+			if(CONFIG.removes >= 2 * CONFIG.getLimSup()) { 
 				CONFIG.time = Math.max (CONFIG.time - 200, 0); 
 				CONFIG.setLimSup(Math.min (CONFIG.getLimSup() + 4, 255));
 			}

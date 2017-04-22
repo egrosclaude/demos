@@ -10,6 +10,44 @@ Esta diapositiva tiene texto asociado que aparece al costado y explica lo que qu
 - El material sirve para dar la clase y para que el estudiante repase
 
 
+## Modelo centralizado
+* Existe un único repositorio compartido
+* Cada desarrollador mantiene su propio **repositorio local**
+* Cada desarrollador debe hacer **pull** antes de **push**
+
+
+## Modelo de gestión de integración
+* Cada desarrollador **clona** el repo principal hacia su propio repo público
+* Edita haciendo cambios sobre su repo local y luego efectúa el **push** hacia su propio repo público
+* Notifica al mantenedor del proyecto (**pull request**)
+* El mantenedor agrega el repo del colaborador como remoto 
+* Hace **merge** hacia su repo local
+* Hace **push** hacia el repo principal
+
+
+##Modelo de "Dictador y generales"
+* La rama **master** es la del dictador
+* Los colaboradores trabajan localmente y hacen **rebase** hacia el master
+* Los generales hacen **merge** de las ramas bajas hacia la rama master
+* El dictador hace **push** de su master al repo principal
+
+
+Este emulador de PC construido en Javascript nos permite practicar los comandos del shell dentro de una *máquina virtual* Linux y desde el navegador, sin necesidad de 
+una instalación completa en nuestro equipo.
+
+* Para retroceder en el terminal
+  - Teclas Ctrl-Up, Ctrl-Down, Ctrl-PageUp y Ctrl-PageDown.
+* Para copiar datos a la máquina virtual
+  - Copiar el texto a la caja o **clipboard** a la derecha.
+  - En el shell de la máquina virtual escribir:
+        cat < /dev/clipboard > /tmp/archivo
+  - Ahora tenemos ese mismo texto en el archivo /tmp/archivo.
+* Para extraer datos de la máquina virtual
+  - Invertir el procedimiento anterior: 
+        cat mi_archivo > /dev/clipboard
+  - Seleccionar el texto en la caja **clipboard** y copiarlo a alguna otra aplicación en nuestro equipo, tal como un editor.
+
+
 ##Ancho de banda digital
 La velocidad de transmisión de una interfaz a veces es llamada ancho de banda digital.
 
@@ -40,21 +78,7 @@ con la derecha.
 - Y, si el número no se puede representar con dos manos, ¿cómo es el procedimiento para saber qué dedos levantar?
 
 
-Este emulador de PC construido en Javascript nos permite practicar los comandos del shell dentro de una *máquina virtual* Linux y desde el navegador, sin necesidad de 
-una instalación completa en nuestro equipo.
-
-* Para retroceder en el terminal
-  - Teclas Ctrl-Up, Ctrl-Down, Ctrl-PageUp y Ctrl-PageDown.
-* Para copiar datos a la máquina virtual
-  - Copiar el texto a la caja o **clipboard** a la derecha.
-  - En el shell de la máquina virtual escribir:
-        cat < /dev/clipboard > /tmp/archivo
-  - Ahora tenemos ese mismo texto en el archivo /tmp/archivo.
-* Para extraer datos de la máquina virtual
-  - Invertir el procedimiento anterior: 
-        cat mi_archivo > /dev/clipboard
-  - Seleccionar el texto en la caja **clipboard** y copiarlo a alguna otra aplicación en nuestro equipo, tal como un editor.
-
+#Conclusiones
 
 #¡Muchas gracias!
 
