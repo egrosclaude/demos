@@ -1,0 +1,50 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \qc \f0 \sa180 \li0 \fi0 \b \fs36 Herramientas Didácticas\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Contents\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Representaci\u243?n sin signo SS(k)\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Rango de representaci\u243?n de SS(k)\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Ancho de banda digital\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Un sistema diferente\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Preguntas\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Conclusiones\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u161?Muchas gracias!\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Representaci\u243?n sin signo SS(k)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Consideremos primero qu\u233? ocurre cuando queremos representar n\u250?meros enteros {\b no negativos} (es decir, {\b positivos o cero}) sobre una cantidad fija de bits.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 En el sistema {\b sin signo}, simplemente usamos el sistema binario de numeraci\u243?n, tal como lo conocemos, {\b pero limit\u225?ndonos a una cantidad fija} de d\u237?gitos binarios o bits. Podemos entonces abreviar el nombre de este sistema como {\b SS(k)}, donde {\i k} es la cantidad fija de bits, o ancho, de cada n\u250?mero representado.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Rango de representaci\u243?n de SS(k)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \u191?Cu\u225?l ser\u225? el rango de representaci\u243?n? El {\b cero} puede representarse, as\u237? que el l\u237?mite inferior del rango de representaci\u243?n ser\u225? 0. Pero \u191?cu\u225?l ser\u225? el l\u237?mite superior? Es decir, si la cantidad de d\u237?gitos binarios en este sistema es {\i k}, \u191?cu\u225?l es el n\u250?mero m\u225?s grande que podremos representar?\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Podemos estudiarlo de dos maneras.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b 1. Usando combinatoria}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Contemos cu\u225?ntos n\u250?meros diferentes podemos escribir con {\i k} d\u237?gitos binarios. Imaginemos un n\u250?mero binario cualquiera con {\i k} d\u237?gitos. El d\u237?gito de m\u225?s a la derecha tiene \u250?nicamente dos posibilidades (0 o 1). Por cada una de \u233?stas hay nuevamente dos posibilidades para el siguiente hacia la izquierda (lo que da las cuatro posibilidades 00, 01, 10, 11). Por cada una de \u233?stas, hay dos posibilidades para el siguiente (dando las ocho posibilidades 000, 001, 010, 011, 100, 101, 110, 111), etc., y as\u237? hasta la posici\u243?n {\i k}. No hay m\u225?s posibilidades. Como hemos multiplicado 2 por s\u237? mismo {\i k} veces, la cantidad de n\u250?meros que se pueden escribir es 2{\super {\i k}}. Luego, el n\u250?mero m\u225?s grande posible es 2{\super {\i k}}\u8197?\u8722?\u8197?1. ({\b Pregunta}: \u191?Por qu\u233? 2{\super {\i k}}\u8197?\u8722?\u8197?1 y no 2{\super {\i k}}?).\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b 2. Usando \u225?lgebra}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 El n\u250?mero m\u225?s grande que podemos representar en un sistema sin signo a {\i k} d\u237?gitos es, seguramente, aquel donde todos los {\i k} d\u237?gitos valen {\b 1}. La Expresi\u243?n General que hemos visto nos dice que si un n\u250?mero {\i n} est\u225? escrito en base 2, {\b con {\i k} d\u237?gitos}, entonces {\i n}\u8196?=\u8196?{\i x}{\sub {\i k}\u8197?\u8722?\u8197?1}\u8197?\u215?\u8197?2{\super {\i k}\u8197?\u8722?\u8197?1}\u8197?+\u8197?...\u8197?+\u8197?{\i x}{\sub 1}\u8197?\u215?\u8197?2{\super 1}\u8197?+\u8197?{\i x}{\sub 0}\u8197?\u215?\u8197?2{\super 0} y, si queremos escribir el m\u225?s grande de todos, deber\u225?n ser todos los {\i x}{\sub {\i i}} iguales a 1. ({\b Pregunta}: \u191?Por qu\u233? si el n\u250?mero {\i n} tiene {\i k} d\u237?gitos binarios, el \u237?ndice del m\u225?s significativo es {\i k}\u8197?\u8722?\u8197?1 y no {\i k}?)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Esta suma vale entonces\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\i x}{\sub {\i k}\u8197?\u8722?\u8197?1}\u8197?\u215?\u8197?2{\super {\i k}\u8197?\u8722?\u8197?1}\u8197?+\u8197?...\u8197?+\u8197?{\i x}{\sub 1}\u8197?\u215?\u8197?2{\super 1}\u8197?+\u8197?{\i x}{\sub 0}\u8197?\u215?\u8197?2{\super 0}\u8196?=\u8196? \u8196?=\u8196?1\u8197?\u215?\u8197?2{\super {\i k}\u8197?\u8722?\u8197?1}\u8197?+\u8197?...\u8197?+\u8197?1\u8197?\u215?\u8197?2{\super 1}\u8197?+\u8197?1\u8197?\u215?\u8197?2{\super 0}\u8196?=\u8196? \u8196?=\u8196?2{\super {\i k}\u8197?\u8722?\u8197?1}\u8197?+\u8197?...\u8197?+\u8197?2{\super 1}\u8197?+\u8197?2{\super 0}\u8196?=\u8196? \u8196?=\u8196?2{\super {\i k}}\u8197?\u8722?\u8197?1\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Usando ambos argumentos hemos llegado a que el n\u250?mero m\u225?s grande que podemos representar con {\i k} d\u237?gitos binarios es 2{\super {\i k}}\u8197?\u8722?\u8197?1. Por lo tanto, {\b el rango de representaci\u243?n de un sistema sin signo a {\i k} d\u237?gitos, o SS(k), es [0,\u8198?2{\super {\i k}}\u8197?\u8722?\u8197?1]}. Todos los n\u250?meros representables en esta clase de sistemas son {\b positivos o cero}.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Ejemplos}\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Para un sistema de representaci\u243?n sin signo a 8 bits: [0,\u8198?2{\super 8}\u8197?\u8722?\u8197?1]\u8196?=\u8196?[0,\u8198?255]\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Con 16 bits: [0,\u8198?2{\super 16}\u8197?\u8722?\u8197?1]\u8196?=\u8196?[0,\u8198?65.535]\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Con 32 bits: [0,\u8198?2{\super 32}\u8197?\u8722?\u8197?1]\u8196?=\u8196?[0,\u8198?4.294.967.295]\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Ancho de banda digital\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 La velocidad de transmisi\u243?n de una interfaz a veces es llamada ancho de banda digital.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 El {\b retardo de transmisi\u243?n} depende de la velocidad de transmisi\u243?n de la interfaz, mientras que el {\b retardo de propagaci\u243?n} es una funci\u243?n de la distancia que tiene que recorrer la se\u241?al por el medio.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Dos enlaces de la misma longitud tendr\u225?n aproximadamente el mismo retardo de propagaci\u243?n, sin importar el ancho de banda digital de las interfaces.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Cuando ambos enlaces transmitan a la vez, los bits emitidos al mismo tiempo llegar\u225?n al otro extremo del enlace en el mismo tiempo.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Sin embargo, cuando una de las interfaces tenga una velocidad de transmisi\u243?n {\b mayor} que la otra, el {\b espacio} ocupado en el enlace por la se\u241?al que codifica cada bit ser\u225? {\b menor} que la del otro enlace.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs32 Un sistema diferente\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Todos conocemos el m\u233?todo tradicional de contar con los dedos. Como tenemos cinco dedos en cada mano, podemos contar hasta diez. Pero tambi\u233?n podemos utilizar un m\u233?todo diferente del tradicional, que resulta ser muy interesante.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Con este m\u233?todo, al llegar a 5 con la mano derecha, representamos el 6 {\b s\u243?lo con un dedo de la izquierda}. Los dedos de la mano derecha {\b vuelven a 0}, y seguimos contando con la derecha.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Cada vez que se agotan los dedos de la mano derecha levantamos un nuevo dedo de la izquierda, y la derecha vuelve a 0.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Cada dedo en alto de la mano izquierda significa que {\b se agot\u243? la secuencia de la mano derecha una vez}.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 Preguntas\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u191?Hasta qu\u233? n\u250?mero se puede representar en este sistema, s\u243?lo con dos manos?\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Si agregamos una tercera mano, de un amigo, \u191?hasta qu\u233? n\u250?mero llegamos?\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u191?Y c\u243?mo se representa el 36? \u191?Y el 37?\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Y con cuatro manos, \u191?hasta qu\u233? n\u250?mero llegamos?\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Y, si el n\u250?mero no se puede representar con dos manos, \u191?c\u243?mo es el procedimiento para saber qu\u233? dedos levantar?\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 Conclusiones\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 \u161?Muchas gracias!\par}
+}
