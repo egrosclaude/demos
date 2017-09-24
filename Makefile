@@ -1,30 +1,34 @@
 DEPS = src/reveal.header src/reveal.trailer
 DTAPE=/home/oso/IC2016/decktape
 
-all: siste uni repre arqui 
-	pandoc -V lang=spanish -V fontfamily=sans -V papersize=A4 -V title="Introducción a la Computación 2017" --toc \
-	SistemasDeNumeración.md \
-	UnidadesDeInformación.md \
-	RepresentaciónDigitalDeDatos.md \
-	ArquitecturaDeComputadoras.md \
-	-o ic2017.pdf
+# all: siste uni repre arqui 
+# 	pandoc -V lang=spanish -V fontfamily=sans -V papersize=A4 -V title="Introducción a la Computación 2017" --toc \
+# 	SistemasDeNumeración.md \
+# 	UnidadesDeInformación.md \
+# 	RepresentaciónDigitalDeDatos.md \
+# 	ArquitecturaDeComputadoras.md \
+# 	-o ic2017.pdf
+
+all: acces
 
 git: 
 	util/github "mm"
 
 tm: Transmediales.html
-index: index.html
-demo: demo.html
-re: Redes.html
-soft: Software.html
-so: SistemasOperativos.html
-comp: SistemasDeCómputo.html
-pres: Presentación.html
-siste: SistemasDeNumeración.html
-uni: UnidadesDeInformación.html
-repre: RepresentaciónDigitalDeDatos.html
-texto: TextoYMultimedia.html
-arqui: ArquitecturaDeComputadoras.html
+acces: Accesibilidad.html
+
+#index: index.html
+#demo: demo.html
+#re: Redes.html
+#soft: Software.html
+#so: SistemasOperativos.html
+#comp: SistemasDeCómputo.html
+#pres: Presentación.html
+#siste: SistemasDeNumeración.html
+#uni: UnidadesDeInformación.html
+#repre: RepresentaciónDigitalDeDatos.html
+#texto: TextoYMultimedia.html
+#arqui: ArquitecturaDeComputadoras.html
 
 %.html: src/%.slides $(DEPS) 
 	util/macro $< > $*.html
@@ -36,13 +40,6 @@ arqui: ArquitecturaDeComputadoras.html
 		-V papersize=A4 \
 		-V title="$(TITLE)" \
 		$*.md --toc -o $*-notes.pdf
-	pandoc \
-		-s \
-		-V lang=spanish \
-		-V fontfamily=sans \
-		-V papersize=A4 \
-		-V title="$(TITLE)" \
-		$*.md --toc -o $*-notes.rtf
 	#Acces
 	pandoc \
 		-s \

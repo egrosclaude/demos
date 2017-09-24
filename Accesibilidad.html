@@ -49,32 +49,45 @@ Eduardo Grosclaude 2017
 </br>
 </div>
 <aside data-markdown class="notes">
+# Una metodología didáctica accesible con Software Libre
+En este trabajo presentamos una herramienta didáctica basada en tecnologías digitales. Con ella pueden crearse presentaciones, con ciertas características especiales, para apoyar las clases expositivas tradicionales. 
+
+Nos referiremos especialmente a los aspectos de accesibilidad de los materiales didácticos creados con esta herramienta.
 </aside>
 </section>
 <!------------------------>
 <!------------------------>
-<section data-transition=fade-in fade-out">
-<h2>Un poco de historia</h2>
+<section data-transition=fade-in fade-out" data-coursemod-shown="false">
+<h2>Motivación</h2>
 <ul>
 <li>Docencia en primer año de Lic. Cs. Computación</li>
 	<ul>
 	<li>Clase tradicional</li>
 	<li>Presentaciones en PDF</li>
-	<li>Estáticas</li>
-	<li>Eficaces pero aburridas</li>
+	<li>Eficaces pero estáticas</li>
 	<li>Posibilidades limitadas</li>
-	<li>No reemplazan al libro</li>
-	<li class="fragment">¡No reemplazan al libro!</li>
+	<li>Videos refuerzan el rol pasivo en el aprendizaje</li>
+	<li>Repensar el rol del libro de texto</li>
 	</ul>
 </ul>
 <aside data-markdown class="notes">
+# Motivación
+
+Las nuevas generaciones de estudiantes presentan sus propias características cognitivas, comunicacionales y actitudinales. Resulta siempre interesante aproximarse al desafío de ensayar nuevas formas de comunicar el material de aula, formas que entiendan e incorporen estos rasgos identitarios de los estudiantes. Aun manteniendo el formato de clase expositiva tradicional, contar con herramientas didácticas diferentes, adaptadas a las audiencias, puede generar nuevas formas de aprendizaje. 
+
+La creación de esta metodología está motivada principalmente por la percepción de que los medios digitales tradicionales (como los documentos de texto, las presentaciones en PowerPoint o herramientas equivalentes, y aun los videos instruccionales) ofrecen un poder expresivo insuficiente, por sus contenidos estáticos, y por promover el rol de *espectador* en los estudiantes. Dado el gran alcance, amplitud, versatilidad y potencia de las tecnologías de comunicación digital actuales, ésta parece una limitación artificial. Los materiales didácticos que vemos habitualmente en las aulas son sin duda los más sencillos, pero no siempre los más poderosos.
+
 </aside>
 </section>
 
-
+<!--
+	Pertinente? Usuarios de iOS usan otro browser
+        Usuarios de lector de pantalla tienen otro setup
+	Usuarios de móviles no disponen de teclado
+-->
 
 <!------------------------>
-<section data-transition="fade-in slide-out">
+<section data-transition="fade-in slide-out" data-coursemod-shown="false">
 <h2>Presentaciones</h2>
 <ul>
 	<li>Que sirvan a la vez para dar la clase y para estudiar</li>
@@ -84,14 +97,24 @@ Eduardo Grosclaude 2017
 	<div class="fragment">
 	<li>Que permitan insertar medios diversos</li>
 		<ul>
-		<li>Videos, audio</li>
 		<li>Navegar la web</li>
+		<li>Videos, audio</li>
 		<li>Animaciones</li>
-		<li>Actividades interactivas</li>
+		<li>Interactividad</li>
 		</ul>
 	</div>
+	<li class="fragment">Que resulten accesibles</li>
 </ul>
 <aside data-markdown class="notes">
+# Objetivos
+La metodología propuesta intenta ofrecer una forma de preparar material didáctico con varias características especiales:
+
++ Que sirva a la vez como apoyo de la clase áulica y para que el estudiante la reconstruya en un momento posterior
++ Que no requiera componentes o tecnologías propietarias
++ En especial, que no necesite editores o visualizadores especiales 
++ Que pueda ser reproducido en cualquier plataforma informática, incluyendo móviles
++ Que pueda contener medios diversos como material extraído de la Web, videos, audio, animaciones, modelos o piezas interactivas 
++ Que resulte inclusivo para las audiencias con discapacidades visuales o auditivas
 </aside>
 </section>
 <!------------------------>
@@ -101,85 +124,49 @@ Eduardo Grosclaude 2017
 <h2>Reveal.js</h2>
 <ul>
 	<li>Framework hecho en HTML5 + Javascript</li>
-	<li>Proyecto con vitalidad</li>
+	<li>Proyecto libre, con vitalidad</li>
 	<li><a href="http://github.com/hakimel/reveal.js" target="_blank"> https://github.com/hakimel/reveal.js</a></li>
 	<li>Muchos plugins</li>
 	<ul>
 		<li>Pizarra, menú, audio, matemática</li>
 	</ul>
+	<li>Editor on line <a href="http://slides.com">slides.com</a></li>
 </ul>
-<img src="img/colab/blog-github.png" class="plain stretch"> 
 <aside data-markdown class="notes">
+# Material de base
+Los objetivos enunciados pueden alcanzarse mediante el uso del moderno arco de tecnologías de la Web, a saber, **HTML, CSS, Javascript**. Con estas tecnologías ubicuas pueden crearse bastidores o *frameworks* que permitan organizar y presentar contenidos de forma consistente y atractiva.
+
+Como base para este trabajo se ha tomado un popular framework para la preparación de presentaciones, llamado **Reveal.js**. Este framework es un proyecto de Software Libre que cuenta con una comunidad sumamente activa. Esto anticipa que se trata de una herramienta plástica, a la cual puede darse la forma que se necesite, y que las piezas o aspectos deficitarios en ella pueden ser abordados, en conjunto con la comunidad, para ser desarrollados o mejorados.
+
+Las presentaciones creadas con el framework Reveal.js (tal como esta misma presentación) requieren del usuario únicamente un navegador o browser de Internet, que es un componente infaltable en cualquier ambiente de computación actual. El autor de la presentación escribe un documento HTML (opcionalmente en un sencillo lenguaje de demarcado o **markup**) y define algunos aspectos de comportamiento y visualización.
+
+La comunidad ha creado una gran cantidad de *plugins* o piezas opcionales de software que agregan o modifican la funcionalidad del material creado. Por ejemplo, se puede trabajar como en una pizarra virtual; se puede incluir menús a medida, con muchas funcionalidades; es posible grabar e insertar audio pregrabado, utilizar notación matemática con calidad de publicación, y en realidad, prácticamente cualquier contenido digital estático o interactivo.
 </aside>
 </section>
 <!------------------------>
 
-
-<section>
-<h2>Representación sin signo SS(k)</h2>
+<section data-coursemod-shown="true">
+<h2>Plugin <i>coursemod</i></h2>
 <ul>
-   <li><b>SS(k)</b> expresa sólo números <b>no negativos</b></li>
-   <li>Simplemente usar $k$ dígitos binarios</li>
-   <div class="fragment">
-   <ol>
-   <li>Con $k$ bits, tengo $2^k$ posibilidades: $2 \times 2 \times 2 ... = 2^k$</li>
-   <li class="fragment">Con $k$ bits, el mayor número binario posible es 111111....1 = $\sum_{i=0}^k{2^i} = 2^k-1$</li>
-   </ol>
-   </div>
-   <li class="fragment"> &rarr; Rango de representación <span class="post_it">$[0, 2^k-1]$</span></li>
-   <div>
-	<ul>
-	   <li class="fragment">Con 4 bits: $[0, 2^4-1] = [0, 15]$</li>
-	   <li class="fragment">Con 8 bits: $[0, 2^8-1] = [0, 255]$</li>
-	   <li class="fragment">Con 32 bits: $[0, 2^{32}-1] = [0, 4.294.967.295]$</li>
-	</ul>
-   </div>
-   <li><a href="Accesibilidad-notes.pdf">Notas de esta presentación</a></li>
+<li>Doble funcionalidad para las presentaciones</li>
+<li>Presentación a cargo del docente</li>
+<li>Repaso y reconstrucción de la clase por el estudiante</li>
+<li>Solicitado a la comunidad</li>
+<li>Desarrollado en unos pocos días</li>
 </ul>
 <aside data-markdown class="notes">
-##Representación sin signo SS(k)
+# Plugin coursemod
+Para satisfacer el objetivo de contar con material que permitiera reproducir la clase en casa, se planteó a la comunidad de desarrolladores la idea de modificar las presentaciones dividiendo la pantalla en dos, acompañando la presentación oral con texto. La comunidad colaboró elaborando un *plugin* exactamente para este fin. 
 
-Consideremos primero qué ocurre cuando queremos representar números enteros **no negativos** (es decir, **positivos o cero**) sobre una cantidad fija de bits. 
+Así, las presentaciones pueden ser utilizadas en dos modos: como conjunto de *slides* o "diapositivas", cuando el docente expone su clase, y como libro de texto en un momento posterior, de estudio y repaso. 
 
-En el sistema **sin signo**, simplemente usamos el sistema binario de numeración, tal como lo conocemos, **pero limitándonos a una cantidad fija** de dígitos binarios o bits. Podemos entonces abreviar el nombre de este sistema como **SS(k)**, donde $k$ es la cantidad fija de bits, o ancho, de cada número representado.
-
-###Rango de representación de SS(k)
-
-¿Cuál será el rango de representación? El **cero** puede representarse, así que el límite inferior del rango de representación será 0. Pero ¿cuál será el límite superior? Es decir, si la cantidad de dígitos binarios en este sistema es $k$, ¿cuál es el número más grande que podremos representar? 
-
-Podemos estudiarlo de dos maneras.
-
-**1. Usando combinatoria**
-
-Contemos cuántos números diferentes podemos escribir con $k$ dígitos binarios. Imaginemos un número binario cualquiera con $k$ dígitos. El dígito de más a la derecha tiene únicamente dos posibilidades (0 o 1). Por cada una de éstas hay nuevamente dos posibilidades para el siguiente hacia la izquierda (lo que da las cuatro posibilidades 00, 01, 10, 11). Por cada una de éstas, hay dos posibilidades para el siguiente (dando las ocho posibilidades 000, 001, 010, 011, 100, 101, 110, 111), etc., y así hasta la posición $k$. No hay más posibilidades. Como hemos multiplicado 2 por sí mismo $k$ veces, la cantidad de números que se pueden escribir es $2^k$. Luego, el número más grande posible es $2^k - 1$. (**Pregunta**: ¿Por qué $2^k - 1$ y no $2^k$?).
-
-**2. Usando álgebra**
-
-El número más grande que podemos representar en un sistema sin signo a $k$ dígitos es, seguramente, aquel donde todos los $k$ dígitos valen **1**. La Expresión General que hemos visto nos dice que si un número $n$ está escrito en base 2, **con $k$ dígitos**, entonces 
-$$n = x_{k-1}\times 2^{k-1} + ... + x_1\times2^1+x_0\times2^0$$ 
-y, si queremos escribir el más grande de todos, deberán ser todos los $x_i$ iguales a 1. (**Pregunta**: ¿Por qué si el número $n$ tiene $k$ dígitos binarios, el índice del más significativo es $k-1$ y no $k$?)
-
-Esta suma vale entonces 
-
-$$ x_{k-1}\times 2^{k-1} + ... + x_1\times2^1+x_0\times2^0 = $$ 
-$$  = 1\times 2^{k-1} + ... + 1\times2^1+1\times2^0 = $$ 
-$$  = 2^{k-1} + ... + 2^1+2^0 = $$ 
-$$  = 2^{k}-1 $$ 
-
-Usando ambos argumentos hemos llegado a que el número más grande que podemos representar con $k$ dígitos binarios es $2^k-1$. Por lo tanto, **el rango de representación de un sistema sin signo a $k$ dígitos, o SS(k), es $[0, 2^k - 1]$**. Todos los números representables en esta clase de sistemas son **positivos o cero**.
-
-**Ejemplos**
-
-- Para un sistema de representación sin signo a 8 bits: $[0, 2^8-1] = [0, 255]$
-- Con 16 bits: $[0, 2^{16}-1] = [0, 65.535]$
-- Con 32 bits: $[0, 2^{32}-1] = [0, 4.294.967.295]$
 </aside>
 </section>
 
 
-<!------------------------>
 
-<section>
+
+<section data-coursemod-shown="false">
 <h2>Microescenarios de aprendizaje</h2>
 <ul>
 <li>Animaciones, videos &rarr; rol pasivo</li>
@@ -192,6 +179,17 @@ Usando ambos argumentos hemos llegado a que el número más grande que podemos r
 </ul>
 </div>
 </ul>
+<aside data-markdown class="notes">
+# Microescenarios de aprendizaje
+
+Más allá de la comunicación de contenidos estáticos, a través de las tecnologías elegidas existe la posibilidad de involucrar a los estudiantes en tareas donde interactúen con el material didáctico. Nos referimos a la posibilidad de presentar un modelo de cualquier sistema, donde el usuario pueda realizar una experiencia virtual interactiva. 
+
+En forma completamente general, esta experiencia puede configurarse como **observar la conducta del sistema, modificar parámetros y repetir**. 
+
+Este sencillo ciclo, lejos de ser mecánico o repetitivo, pone al estudiante en control del material. Puede disparar preguntas ("qué pasaría si las condiciones fueran..."), estimular la motivación, permitir explorar casos límite, facilitar la comprensión por inducción. 
+
+En una palabra, un microescenario de aprendizaje ofrece una oportunidad más para "la experiencia del Ajá" y puede así contribuir a modificar positivamente la relación afectiva del estudiante con el material.
+</aside>
 </section>
 
 
@@ -431,15 +429,17 @@ Usando ambos argumentos hemos llegado a que el número más grande que podemos r
 <small><i>Animación por Iván Eidelstein, Jorge L. Beroisa</i></small>
 </div>
 <aside data-markdown class="notes">
-##Ancho de banda digital
-La velocidad de transmisión de una interfaz a veces es llamada ancho de banda digital.
+#Una experiencia
+Dos estudiantes de la materia de Redes de Computadoras crearon un microescenario de aprendizaje con una animación controlada. En esta animación, el usuario controla la **velocidad de transmisión** a través de un enlace simulado entre dos computadoras y puede estudiar los efectos de modificar esta velocidad. 
 
-El **retardo de transmisión** depende de la velocidad de transmisión de la interfaz, mientras que el **retardo de propagación** es una función de la distancia que tiene que recorrer la señal por el medio.
+Variando la cantidad de **paquetes de información** que transmiten las computadoras a través del enlace en diferentes condiciones de velocidad de transmisión, los estudiantes:
 
-Dos enlaces de la misma longitud tendrán aproximadamente el mismo retardo de propagación, sin importar el ancho de banda digital de las interfaces. 
++ Pudieron comprender la diferencia entre la velocidad de transmisión y la velocidad de propagación de las señales
++ Pudieron comprender la relación entre los retardos debidos a transmisión y a propagación de los paquetes
++ Elaboraron en forma autónoma la idea de que la emisión de un paquete de información atraviesa el medio con una cierta ocupación del espacio durante una cantidad de tiempo
++ Esta noción no se explicitaba en los contenidos de la materia, sino que fue inferida correctamente por los estudiantes
++ Esta noción facilitó la comprensión de temas de unidades posteriores como Control de Congestión en Transporte
 
-* Cuando ambos enlaces transmitan a la vez, los bits emitidos al mismo tiempo llegarán al otro extremo del enlace en el mismo tiempo. 
-* Sin embargo, cuando una de las interfaces tenga una velocidad de transmisión **mayor** que la otra, el **espacio** ocupado en el enlace por la señal que codifica cada bit será **menor** que la del otro enlace.
 </aside>
 </section>
 
@@ -626,10 +626,14 @@ con la derecha.
 
 <section data-transition="slide-in slide-out">
 <h1>¡Muchas gracias!</h1>
-<h3>oso@fi.uncoma.edu.ar</h3>
-<aside data-markdown class="notes">
-</aside>
+<ul>
+<li>oso@fi.uncoma.edu.ar</li>
+<li>Esta presentación en Internet: <a href="https://egrosclaude.github.io/demos/Accesibilidad.html">http://egrosclaude.github.io/demos/Accesibilidad.html</a></li>
+
+<li><a href="Accesibilidad-notes.pdf">Notas de esta presentación</a></li>
+</ul>
 </section>
+
 <!------------------------------------------------------------------>
    </div>
 </div>
@@ -658,7 +662,7 @@ con la derecha.
 		// ----------------------------------------------------------------------------
 		coursemod: {
 			enabled: true,
-			shown: false,
+			shown: true,
 		},
 		chart: {
 			defaults: { 
@@ -786,8 +790,9 @@ con la derecha.
 		// -------- Math plugin ----------
 		math: {
 			//mathjax: 'https://cdn.mathjax.org/mathjax/latest/Ma2YthJax.js',
-			// mathjax: 'externals/mathjax/MathJax.js',
-			mathjax: window.location.search.match( /localversion/g ) ? 'externals/mathjax/MathJax.js' : 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+			//mathjax: 'externals/mathjax/MathJax.js',
+			//mathjax: window.location.search.match( /localversion/g ) ? 'externals/mathjax/MathJax.js' : 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+			mathjax: window.location.search.match( /localversion/g ) ? 'externals/mathjax/MathJax.js' : 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
 			config: 'TeX-AMS_HTML-full' 
 		},
 
@@ -814,7 +819,9 @@ con la derecha.
 			68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
 			82: function() { Recorder.toggleRecording(); }, // press 'r' to start/stop recording
 			90: function() { Recorder.downloadZip(); },     // press 'z' to download zip containing audio files
-			84: function() { Recorder.fetchTTS(); }     // press 't' to fetch TTS audio files
+			81: function() { tts.cancel(); }, // press q to cancel speaking and clear speech queue.
+			84: function() { tts.toggle(); },  // press t to toggle speech on/off
+			//84: function() { Recorder.fetchTTS(); },     // press 't' to fetch TTS audio files
 		},
 
 
@@ -844,9 +851,11 @@ con la derecha.
 			//{ src: 'externals/reveal-plugins/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
 			{ src: 'externals/snap/snap.svg-min.js', async: true },
 			{ src: 'externals/coursemod/coursemod.js', async: true },
+			{ src: 'externals/tts_min_reveal.js', async: false},
 			// ... 
 		]
 	});
+
 </script>
 
 </body>
