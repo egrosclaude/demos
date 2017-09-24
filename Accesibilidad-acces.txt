@@ -41,7 +41,7 @@ didáctico con varias características especiales:
 -   Que sirva a la vez como apoyo de la actividad en el aula y para que
     el estudiante la reconstruya en un momento posterior.
 -   Que no requiera componentes o tecnologías propietarias.
--   En especial, que no necesite editores o visualizadores especiales .
+-   En especial, que no necesite editores o visualizadores especiales.
 -   Que pueda ser reproducido en cualquier plataforma informática,
     incluyendo móviles.
 -   Que pueda contener medios diversos como material extraído de la Web,
@@ -201,8 +201,8 @@ maneras.
         Este mecanismo ya existe tal cual se publica Reveal.js, con el
         nombre de Audioslideshow Plugin.
     -   Las presentaciones pueden incluir habla sintetizada al tiempo de
-        reproducción, a partir del texto apunte. Este mecanismo de
-        Text-to-Speech utiliza la API de audio nativa de HTML5 y ha sido
+        reproducción, a partir del texto apunte. Este mecanismo de Text
+        to Speech utiliza la API de audio nativa de HTML5 y ha sido
         incorporado por nosotros.
     -   El texto apunte puede obtenerse en formatos de texto plano, PDF
         y RTF (consumible por Microsoft Word). Este texto apunte se
@@ -231,7 +231,7 @@ Audioslideshow
 -   Si se modifica el material, debe modificarse el habla grabada en
     forma acorde.
 
-Text-to-Speech
+Text to Speech
 
 -   El mecanismo únicamente produce voz sintética, no otros contenidos.
     Su expresividad es limitada aunque aceptable.

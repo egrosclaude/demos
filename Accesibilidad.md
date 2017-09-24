@@ -18,7 +18,7 @@ La metodología propuesta intenta ofrecer una forma de preparar material didáct
 
 - Que sirva a la vez como apoyo de la actividad en el aula y para que el estudiante la reconstruya en un momento posterior.
 - Que no requiera componentes o tecnologías propietarias.
-- En especial, que no necesite editores o visualizadores especiales .
+- En especial, que no necesite editores o visualizadores especiales.
 - Que pueda ser reproducido en cualquier plataforma informática, incluyendo móviles.
 - Que pueda contener medios diversos como material extraído de la Web, videos, audio, animaciones, modelos o piezas interactivas.
 - Que se adapte a los contextos de Educación a Distancia.
@@ -94,7 +94,7 @@ Los objetivos de accesibilidad de la herramienta se abordan de varias maneras.
 2. En segundo lugar, para las audiencias con problemas de percepción visual se consideran tres alternativas no excluyentes:
 
     - Las presentaciones pueden incluir material de audio grabado. Este mecanismo ya existe tal cual se publica Reveal.js, con el nombre de **Audioslideshow Plugin**.
-    - Las presentaciones pueden incluir habla sintetizada al tiempo de reproducción, a partir del texto apunte. Este mecanismo de **Text-to-Speech** utiliza la API de audio nativa de HTML5 y ha sido incorporado por nosotros. 
+    - Las presentaciones pueden incluir habla sintetizada al tiempo de reproducción, a partir del texto apunte. Este mecanismo de **Text to Speech** utiliza la API de audio nativa de HTML5 y ha sido incorporado por nosotros. 
     - El texto apunte puede obtenerse en formatos de texto plano, PDF y RTF (consumible por Microsoft Word). Este texto apunte se postprocesa automáticamente para mejorar las características de accesibilidad frente a las tecnologías asistivas. Por ejemplo, la notación matemática se descomprime para hacerla directamente pronunciable por los lectores de texto, que suelen tener dificultades con ella. 
 
 
@@ -106,7 +106,7 @@ Los objetivos de accesibilidad de la herramienta se abordan de varias maneras.
 - Si se modifica el material, debe modificarse el habla grabada en forma acorde.
 
 
-###Text-to-Speech
+###Text to Speech
 - El mecanismo únicamente produce voz sintética, no otros contenidos. Su expresividad es limitada aunque aceptable.
 - Al presente, la API de voz del estándar HTML5 no está uniformemente adoptada por todos los agentes de usuario; por lo cual este mecanismo aún no funciona en todos los navegadores.
 - Si se modifica el material, el audio sintético es regenerado al tiempo de reproducción del material.
