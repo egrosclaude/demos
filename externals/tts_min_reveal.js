@@ -156,7 +156,9 @@ tts.sanitize = function(t) {
 	t = t.replace(/_/g, " sub ");
 	t = t.replace(/\[/g, " .abre corchetes ");
 	t = t.replace(/\]/g, " .cierra corchetes ");
+	t = t.replace(/:/g, " ");
 	t = t.replace(/\.\.\./g, " puntos suspensivos ");
+	t = t.replace(/(\S+)\.(\S+)/g, " $1 punto $2 ");
 	return t;
 
 };

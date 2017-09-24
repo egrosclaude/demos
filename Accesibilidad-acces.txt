@@ -62,26 +62,30 @@ funcional y estéticamente consistente.
 Como base para este trabajo se ha tomado un popular framework para la
 preparación de presentaciones, llamado Reveal.js. Este framework es un
 proyecto de Software Libre que cuenta con una comunidad sumamente
-activa. Esto anticipa que se trata de una herramienta plástica, a la
-cual puede darse la forma que se necesite, y que las piezas o aspectos
-deficitarios en ella pueden ser abordados, en conjunto con la comunidad,
-para ser desarrollados o mejorados.
+activa. Esto permite anticipar que se trata de una herramienta plástica,
+a la cual puede darse la forma que se necesite, y que las partes o
+aspectos deficitarios en ella pueden ser abordados, en conjunto con la
+comunidad, para ser desarrollados o mejorados.
 
 Las presentaciones creadas con el framework Reveal.js (tal como esta
 misma presentación) requieren del usuario únicamente un navegador o
 browser de Internet, que es un componente infaltable en cualquier
 ambiente de computación actual. Para utilizar Reveal.js, el autor de la
 presentación escribe un documento HTML (opcionalmente en un sencillo
-lenguaje de demarcado o markup) con un cierto formato, y define algunos
+lenguaje de demarcado o markup), con un cierto formato, y define algunos
 aspectos de comportamiento y visualización.
 
 La comunidad ha creado una gran cantidad de plugins o piezas opcionales
 de software que agregan o modifican la funcionalidad del material
-creado. Por ejemplo, se puede trabajar como en una pizarra virtual; la
-interfaz de usuario puede incluir menús a medida, con muchas
-funcionalidades; es posible grabar e insertar audio pregrabado, utilizar
-notación matemática con calidad de publicación, y en realidad, incluir
-prácticamente cualquier contenido digital estático o interactivo.
+creado. Por ejemplo:
+
+-   Se puede trabajar como en una pizarra virtual.
+-   La interfaz de usuario puede incluir menús a medida, con
+    funcionalidades implementadas por el autor del material.
+-   Es posible grabar audio, e insertar audio pregrabado.
+-   Es posible utilizar notación matemática con calidad de publicación.
+-   En realidad, se puede incluir prácticamente cualquier contenido
+    digital, estático o interactivo.
 
 Plugin coursemod
 ----------------
@@ -184,46 +188,27 @@ de accesibilidad según W3C:
 Accesibilidad en la metodología
 -------------------------------
 
-Los objetivos de accesibilidad de la herramienta se abordan de varias
+Los objetivos de accesibilidad de la herramienta son abordados de varias
 maneras.
 
 1.  En primer lugar, los destinatarios con problemas de percepción
-    acústica, alfabetizados, utilizan el texto que su autor adjunta como
-    apunte a la presentación. Este texto queda disponible en la segunda
-    etapa de uso del material, en el espacio de estudio fuera del aula,
-    gracias al plugin Coursemod desarrollado a pedido nuestro por la
-    comunidad del proyecto Reveal.js.
+    acústica, alfabetizados, visualizan el texto que su autor adjunta
+    como apunte a la presentación.
 
 2.  En segundo lugar, para las audiencias con problemas de percepción
     visual se consideran tres alternativas no excluyentes:
-
     -   Las presentaciones pueden incluir material de audio grabado.
-        Este mecanismo ya existe tal cual se publica Reveal.js, con el
-        nombre de Audioslideshow Plugin.
     -   Las presentaciones pueden incluir habla sintetizada al tiempo de
-        reproducción, a partir del texto apunte. Este mecanismo de Text
-        to Speech utiliza la API de audio nativa de HTML5 y ha sido
-        incorporado por nosotros.
+        reproducción, a partir del texto apunte.
+
     -   El texto apunte puede obtenerse en formatos de texto plano, PDF
-        y RTF (consumible por Microsoft Word). Este texto apunte se
-        postprocesa automáticamente para mejorar las características de
-        accesibilidad frente a las tecnologías asistivas. Por ejemplo,
-        la notación matemática se descomprime para hacerla directamente
-        pronunciable por los lectores de texto, que suelen tener
-        dificultades con ella.
+        y RTF (consumible por Microsoft Word).
 
 Audioslideshow
 
--   La interfaz de usuario de Reveal.js no está completamente
-    accesibilizada. Algunas funciones dependen del uso del mouse, y no
-    tienen respuesta audible como recomienda W3C/WAI. El mecanismo de
-    Audioslideshow no dispone de controles gobernados por teclado, por
-    lo cual su uso no es sencillo para un usuario con disminución
-    visual.
--   Tampoco está Reveal.js completamente independizado de la plataforma.
-    La mayoría de los plugins responden a la pulsación de teclas,
-    mientras que un usuario de dispositivos móviles no puede acceder al
-    teclado virtual mientras el navegador no solicite input.
+El mecanismo de grabación y reproducción de audio grabado ya existe tal
+cual se publica Reveal.js, con el nombre de Audioslideshow Plugin.
+
 -   La calidad comunicacional del audio hablado, con sus entonaciones y
     matices, es insuperable.
 -   El audio incorporado puede ser de cualquier contenido, no solamente
@@ -235,17 +220,55 @@ Audioslideshow
 
 Text to Speech
 
+El mecanismo de Text to Speech utiliza la API de voz nativa de HTML5 y
+ha sido incorporado por nosotros.
+
 -   El mecanismo únicamente produce voz sintética, no otros contenidos.
     Su expresividad es limitada aunque aceptable.
+-   El material de partida es el texto apunte y no se requiere tiempo o
+    esfuerzo adicional.
+-   Si se modifica el material, el audio sintético es regenerado al
+    tiempo de reproducción del material.
 -   Al presente, la API de voz del estándar HTML5 no está uniformemente
     adoptada por todos los agentes de usuario; por lo cual este
     mecanismo aún no funciona en todos los navegadores.
--   Si se modifica el material, el audio sintético es regenerado al
-    tiempo de reproducción del material.
--   Al presente el mecanismo depende del servicio de síntesis de voz de
+-   Al presente, el mecanismo depende del servicio de síntesis de voz de
     Google.
 -   Puede provocarse un conflicto con la tecnología asistiva utilizada
     por el usuario que requiera desactivar una u otra función.
+
+Postprocesamiento de textos
+
+El texto apunte queda disponible para ser visualizado en la segunda
+etapa de uso del material, en el espacio de estudio fuera del aula,
+gracias al plugin Coursemod desarrollado a pedido nuestro por la
+comunidad del proyecto Reveal.js.
+
+Además, este mismo texto es extraído automáticamente, al momento de la
+publicación del material, y postprocesado de modo de obtener, por un
+lado, una versión PDF imprimible; y por otro lado, una versión de texto
+plano y una versión RTF, ambas equivalentes, para ser abiertos con
+lectores de textos dotados de tecnología asistiva.
+
+Este texto apunte se postprocesa en forma automática para mejorar las
+características de accesibilidad frente a las tecnologías asistivas. Por
+ejemplo, la notación matemática se descomprime para hacerla directamente
+pronunciable por los lectores de texto, que suelen tener dificultades
+con ella.
+
+El postprocesamiento se ejecuta mediante el software de conversión de
+textos del proyecto libre pandoc.
+
+-   La interfaz de usuario de Reveal.js no está completamente
+    accesibilizada. Algunas funciones dependen del uso del mouse, y no
+    tienen respuesta audible como recomienda W3C/WAI. El mecanismo de
+    Audioslideshow no dispone de controles gobernados por teclado, por
+    lo cual su uso no es sencillo para un usuario con disminución
+    visual.
+-   Tampoco está Reveal.js completamente independizado de la plataforma.
+    La mayoría de los plugins responden a la pulsación de teclas,
+    mientras que un usuario de dispositivos móviles no puede acceder al
+    teclado virtual mientras el navegador no solicite input.
 
 Datos de contacto
 -----------------
