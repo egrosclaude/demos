@@ -211,14 +211,14 @@ Reveal.addEventListener( 'fragmentshown', function( event ) {
 	
 Reveal.addEventListener( 'ready', function( event ) {
 	// event.currentSlide, event.indexh, event.indexv
-	Reveal.configure({
+	/*Reveal.configure({
 	  keyboard: {
 		81: function() {tts.cancel()}, // press q to cancel speaking and clear speech queue.
 		84: function() {tts.toggle()}  // press t to toggle speech on/off
 				 
 	  }
 	});
-
+	*/
 	console.log(Reveal.getConfig().keyboard);
 
 	var thisSlide = Reveal.getCurrentSlide();
