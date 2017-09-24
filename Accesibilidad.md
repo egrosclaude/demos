@@ -116,6 +116,10 @@ Los objetivos de accesibilidad de la herramienta se abordan de varias maneras.
 
 
 ##Datos de contacto
+
 - Autor: Eduardo Grosclaude, Facultad de Informática, Universidad Nacional del Comahue
+- Email: oso@fi.uncoma.edu.ar
 - Esta presentación se encuentra en Internet: http://egrosclaude.github.io/demos/Accesibilidad.html
+
+¡Muchas gracias por su atención!
 
