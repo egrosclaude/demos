@@ -1,3 +1,3 @@
-# transmediales
+# Herramientas didácticas 
 
-Herramientas didácticas transmediales
+Transmediales, accesibles
