@@ -230,6 +230,8 @@ Audioslideshow
     voz.
 -   Si se modifica el material, debe modificarse el habla grabada en
     forma acorde.
+-   Puede provocarse un conflicto con la tecnología asistiva utilizada
+    por el usuario que requiera desactivar una u otra función.
 
 Text to Speech
 
@@ -242,10 +244,13 @@ Text to Speech
     tiempo de reproducción del material.
 -   Al presente el mecanismo depende del servicio de síntesis de voz de
     Google.
+-   Puede provocarse un conflicto con la tecnología asistiva utilizada
+    por el usuario que requiera desactivar una u otra función.
 
 Datos de contacto
 -----------------
 
--   Autor: Eduardo Grosclaude, Facultad de Informática UNC
--   Esta presentación en Internet:
+-   Autor: Eduardo Grosclaude, Facultad de Informática, Universidad
+    Nacional del Comahue
+-   Esta presentación se encuentra en Internet:
     http://egrosclaude.github.io/demos/Accesibilidad.html

@@ -104,6 +104,7 @@ Los objetivos de accesibilidad de la herramienta se abordan de varias maneras.
 - La calidad comunicacional del audio hablado, con sus entonaciones y matices, es insuperable.
 - El audio incorporado puede ser de cualquier contenido, no solamente voz.
 - Si se modifica el material, debe modificarse el habla grabada en forma acorde.
+- Puede provocarse un conflicto con la tecnología asistiva utilizada por el usuario que requiera desactivar una u otra función.
 
 
 ###Text to Speech
@@ -111,9 +112,10 @@ Los objetivos de accesibilidad de la herramienta se abordan de varias maneras.
 - Al presente, la API de voz del estándar HTML5 no está uniformemente adoptada por todos los agentes de usuario; por lo cual este mecanismo aún no funciona en todos los navegadores.
 - Si se modifica el material, el audio sintético es regenerado al tiempo de reproducción del material.
 - Al presente el mecanismo depende del servicio de síntesis de voz de Google.
+- Puede provocarse un conflicto con la tecnología asistiva utilizada por el usuario que requiera desactivar una u otra función.
 
 
 ##Datos de contacto
-- Autor: Eduardo Grosclaude, Facultad de Informática UNC
-- Esta presentación en Internet: http://egrosclaude.github.io/demos/Accesibilidad.html
+- Autor: Eduardo Grosclaude, Facultad de Informática, Universidad Nacional del Comahue
+- Esta presentación se encuentra en Internet: http://egrosclaude.github.io/demos/Accesibilidad.html
 
