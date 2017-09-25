@@ -143,13 +143,15 @@ La metodología presentada está en desarrollo y requiere resolver gran cantidad
 - Tampoco está Reveal.js completamente independizado de la plataforma. La mayoría de los plugins responden a la pulsación de teclas, mientras que un usuario de dispositivos móviles no puede acceder al teclado virtual mientras el navegador no solicite input.
 - Se necesita un cuidadoso estudio y seguimiento de los estándares Web y su adopción por los agentes de usuario, en particular en lo referido al tratamiento del habla. 
 - La API HTML5 de reconocimiento de habla ofrece enormes posibilidades para la accesibilidad no visual, como el comando por voz, la creación de audioblogs, o foros de consultas y respuestas basados en habla.
+- Es necesario simplificar el uso de la metodología para poder hacerla disponible a la comunidad educativa.
 
 
 ##Datos de contacto
 
 - Autor: Eduardo Grosclaude, Facultad de Informática, Universidad Nacional del Comahue
 - Email: oso@fi.uncoma.edu.ar
-- Esta presentación se encuentra en Internet: http://egrosclaude.github.io/demos/Accesibilidad.html
+- Esta presentación se encuentra en Internet: https://egrosclaude.github.io/demos/Accesibilidad.html
+- Para descargar el proyecto: https://github.com/egrosclaude/demos
 
 ¡Muchas gracias por su atención!
 
