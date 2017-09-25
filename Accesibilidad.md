@@ -54,7 +54,7 @@ El proceso colaborativo de diseño e implementación de este plugin, orientado p
 
 Más allá de la comunicación de contenidos estáticos, las tecnologías elegidas ofrecen la posibilidad de involucrar a los estudiantes en tareas donde interactúen con el material didáctico. Nos referimos a la posibilidad de presentar un modelo de cualquier sistema bajo estudio, donde el estudiante usuario pueda realizar una experiencia virtual interactiva. 
 
-Esta experiencia puede configurarse en forma completamente general como **observar la conducta del sistema, modificar parámetros y repetir**. 
+Esta actividad puede configurarse en forma completamente general como **observar la conducta del sistema, crear hipótesis, modificar parámetros y repetir**. 
 
 Este sencillo ciclo, lejos de ser mecánico o repetitivo, pone al estudiante en control del material. Puede disparar preguntas ("qué pasaría si las condiciones fueran..."), estimular la motivación, permitir explorar casos límite, facilitar la comprensión por inducción. 
 
@@ -111,7 +111,7 @@ El mecanismo de grabación y reproducción de audio grabado ya existe tal cual s
 - La calidad comunicacional del audio hablado, con sus entonaciones y matices, es insuperable.
 - El audio incorporado puede ser de cualquier contenido, no solamente voz.
 - Si se modifica el material, debe modificarse el habla grabada en forma acorde.
-- Puede provocarse un conflicto con la tecnología asistiva utilizada por el usuario que requiera desactivar una u otra función.
+- Puede provocarse un conflicto con la tecnología asistiva utilizada por el usuario, que requiera desactivar una u otra función.
 
 
 ###Text to Speech
@@ -122,7 +122,7 @@ El mecanismo de **Text to Speech** utiliza la API de voz nativa de HTML5 y ha si
 - Si se modifica el material, el audio sintético es regenerado al tiempo de reproducción del material.
 - Al presente, la API de voz del estándar HTML5 no está uniformemente adoptada por todos los agentes de usuario; por lo cual este mecanismo aún no funciona en todos los navegadores.
 - Al presente, el mecanismo depende del servicio de síntesis de voz de Google.
-- Puede provocarse un conflicto con la tecnología asistiva utilizada por el usuario que requiera desactivar una u otra función.
+- Puede provocarse un conflicto con la tecnología asistiva utilizada por el usuario, que requiera desactivar una u otra función.
 
 
 ###Postprocesamiento de textos
@@ -130,13 +130,19 @@ El texto apunte queda disponible para ser visualizado en la segunda etapa de uso
 
 Además, este mismo texto es extraído automáticamente, al momento de la publicación del material, y postprocesado de modo de obtener, por un lado, una versión PDF imprimible; y por otro lado, una versión de texto plano y una versión RTF, ambas equivalentes, para ser abiertos con lectores de textos dotados de tecnología asistiva.
 
-Este texto apunte se postprocesa en forma automática para mejorar las características de accesibilidad frente a las tecnologías asistivas. Por ejemplo, la notación matemática se descomprime para hacerla directamente pronunciable por los lectores de texto, que suelen tener dificultades con ella.
+Este texto apunte se postprocesa en forma automática para mejorar las características de accesibilidad frente a las tecnologías asistivas. Por ejemplo, la notación matemática se expande para hacerla directamente pronunciable por los lectores de texto, que suelen tener dificultades para interpretarla.
 
 El postprocesamiento se ejecuta mediante el software de conversión de textos del proyecto libre **pandoc**.
 
 
+##Trabajos a futuro
+
+La metodología presentada está en desarrollo y requiere resolver gran cantidad de problemas. 
+
 - La interfaz de usuario de Reveal.js no está completamente accesibilizada. Algunas funciones dependen del uso del mouse, y no tienen respuesta audible como recomienda W3C/WAI. El mecanismo de Audioslideshow no dispone de controles gobernados por teclado, por lo cual su uso no es sencillo para un usuario con disminución visual.
 - Tampoco está Reveal.js completamente independizado de la plataforma. La mayoría de los plugins responden a la pulsación de teclas, mientras que un usuario de dispositivos móviles no puede acceder al teclado virtual mientras el navegador no solicite input.
+- Se necesita un cuidadoso estudio y seguimiento de los estándares Web y su adopción por los agentes de usuario, en particular en lo referido al tratamiento del habla. 
+- La API HTML5 de reconocimiento de habla ofrece enormes posibilidades para la accesibilidad no visual, como el comando por voz, la creación de audioblogs, o foros de consultas y respuestas basados en habla.
 
 
 ##Datos de contacto
