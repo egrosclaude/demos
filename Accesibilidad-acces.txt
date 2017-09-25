@@ -115,8 +115,9 @@ posibilidad de presentar un modelo de cualquier sistema bajo estudio,
 donde el estudiante usuario pueda realizar una experiencia virtual
 interactiva.
 
-Esta experiencia puede configurarse en forma completamente general como
-observar la conducta del sistema, modificar parámetros y repetir.
+Esta actividad puede configurarse en forma completamente general como
+observar la conducta del sistema, crear hipótesis, modificar parámetros
+y repetir.
 
 Este sencillo ciclo, lejos de ser mecánico o repetitivo, pone al
 estudiante en control del material. Puede disparar preguntas ("qué
@@ -216,7 +217,7 @@ cual se publica Reveal.js, con el nombre de Audioslideshow Plugin.
 -   Si se modifica el material, debe modificarse el habla grabada en
     forma acorde.
 -   Puede provocarse un conflicto con la tecnología asistiva utilizada
-    por el usuario que requiera desactivar una u otra función.
+    por el usuario, que requiera desactivar una u otra función.
 
 Text to Speech
 
@@ -235,7 +236,7 @@ ha sido incorporado por nosotros.
 -   Al presente, el mecanismo depende del servicio de síntesis de voz de
     Google.
 -   Puede provocarse un conflicto con la tecnología asistiva utilizada
-    por el usuario que requiera desactivar una u otra función.
+    por el usuario, que requiera desactivar una u otra función.
 
 Postprocesamiento de textos
 
@@ -252,12 +253,18 @@ lectores de textos dotados de tecnología asistiva.
 
 Este texto apunte se postprocesa en forma automática para mejorar las
 características de accesibilidad frente a las tecnologías asistivas. Por
-ejemplo, la notación matemática se descomprime para hacerla directamente
+ejemplo, la notación matemática se expande para hacerla directamente
 pronunciable por los lectores de texto, que suelen tener dificultades
-con ella.
+para interpretarla.
 
 El postprocesamiento se ejecuta mediante el software de conversión de
 textos del proyecto libre pandoc.
+
+Trabajos a futuro
+-----------------
+
+La metodología presentada está en desarrollo y requiere resolver gran
+cantidad de problemas.
 
 -   La interfaz de usuario de Reveal.js no está completamente
     accesibilizada. Algunas funciones dependen del uso del mouse, y no
@@ -269,6 +276,15 @@ textos del proyecto libre pandoc.
     La mayoría de los plugins responden a la pulsación de teclas,
     mientras que un usuario de dispositivos móviles no puede acceder al
     teclado virtual mientras el navegador no solicite input.
+-   Se necesita un cuidadoso estudio y seguimiento de los estándares Web
+    y su adopción por los agentes de usuario, en particular en lo
+    referido al tratamiento del habla.
+-   La API HTML5 de reconocimiento de habla ofrece enormes posibilidades
+    para la accesibilidad no visual, como el comando por voz, la
+    creación de audioblogs, o foros de consultas y respuestas basados en
+    habla.
+-   Es necesario simplificar el uso de la metodología para poder hacerla
+    disponible a la comunidad educativa.
 
 Datos de contacto
 -----------------
@@ -277,6 +293,7 @@ Datos de contacto
     Nacional del Comahue
 -   Email: oso@fi.uncoma.edu.ar
 -   Esta presentación se encuentra en Internet:
-    http://egrosclaude.github.io/demos/Accesibilidad.html
+    https://egrosclaude.github.io/demos/Accesibilidad.html
+-   Para descargar el proyecto: https://github.com/egrosclaude/demos
 
 ¡Muchas gracias por su atención!
