@@ -3,6 +3,10 @@
 
 
 
+
+
+
+
 ##¡Esto funciona!
 Esta diapositiva tiene texto asociado que aparece al costado y explica lo que queremos describir en la imagen.
 
@@ -48,6 +52,14 @@ una instalación completa en nuestro equipo.
   - Seleccionar el texto en la caja **clipboard** y copiarlo a alguna otra aplicación en nuestro equipo, tal como un editor.
 
 
+
+
+
+
+
+
+
+
 ##Ancho de banda digital
 La velocidad de transmisión de una interfaz a veces es llamada ancho de banda digital.
 
@@ -77,9 +89,5 @@ con la derecha.
 - Y con cuatro manos, ¿hasta qué número llegamos? 
 - Y, si el número no se puede representar con dos manos, ¿cómo es el procedimiento para saber qué dedos levantar?
 
-
-#Conclusiones
-
-#¡Muchas gracias!
 
 
