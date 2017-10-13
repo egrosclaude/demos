@@ -14,6 +14,12 @@ all: acces tm
 git: 
 	util/github "mm"
 
+ghpages:
+	git checkout gh-pages
+	git rebase master
+	git push origin gh-pages
+	git checkout master
+
 tm: Transmediales.html
 acces: Accesibilidad.html
 

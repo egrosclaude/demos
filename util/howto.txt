@@ -15,3 +15,10 @@ The online Pro Git Book has some good information on submodules (and git in gene
 I noticed this blog entry which talks about submodules and compares them to Subversion's svn:externals mechanism: http://speirs.org/blog/2009/5/11/understanding-git-submodules.html
 
 * As a best practice, you should always place your submodules in their own directory, such as Externals. If you don't, your root project directory can become very cluttered very fast.
+
+# Sync master to gh-pages
+
+git checkout gh-pages // go to the gh-pages branch
+git rebase master // bring gh-pages up to date with master
+git push origin gh-pages // commit the changes
+git checkout master // return to the master branch
