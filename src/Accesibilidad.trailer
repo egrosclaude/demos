@@ -12,7 +12,7 @@
 		progress: true,
 		history: true,
 		center: false,
-		previewLinks: true,
+		//previewLinks: true,
 		theme: 'rdci',
 		transition: 'slide', // none/fade/slide/convex/concave/zoom
 
