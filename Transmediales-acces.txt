@@ -97,9 +97,3 @@ Preguntas
 -   Y con cuatro manos, ¿hasta qué número llegamos?
 -   Y, si el número no se puede representar con dos manos, ¿cómo es el
     procedimiento para saber qué dedos levantar?
-
-Conclusiones
-============
-
-¡Muchas gracias!
-================

@@ -9,7 +9,7 @@ DTAPE=/home/oso/IC2016/decktape
 # 	ArquitecturaDeComputadoras.md \
 # 	-o ic2017.pdf
 
-all: acces
+all: acces tm
 
 git: 
 	util/github "mm"
@@ -55,4 +55,4 @@ acces: Accesibilidad.html
 
 
 clean: 
-	mv index.html Presentación.html Software.html SistemasOperativos.html SistemasDeCómputo.html SistemasDeNumeración.html UnidadesDeInformación.html RepresentaciónDigitalDeDatos.html TextoYMultimedia.html ArquitecturaDeComputadoras.html attic
+	mv Accesibilidad.html Transmediales.html index.html Presentación.html Software.html SistemasOperativos.html SistemasDeCómputo.html SistemasDeNumeración.html UnidadesDeInformación.html RepresentaciónDigitalDeDatos.html TextoYMultimedia.html ArquitecturaDeComputadoras.html attic
